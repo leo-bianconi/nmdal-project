@@ -1,0 +1,1574 @@
+{
+    "uid": "5ac75d36-a72a-4967-8fed-5070719ca3e8",
+    "name": "3_Linear",
+    "preprocessing": [
+        {
+            "remove_columns": [
+                "feature_6",
+                "feature_9",
+                "feature_18",
+                "feature_20",
+                "feature_21",
+                "feature_26",
+                "feature_35",
+                "feature_37",
+                "feature_45",
+                "feature_47",
+                "feature_48",
+                "feature_49",
+                "feature_51",
+                "feature_54",
+                "feature_55",
+                "feature_57",
+                "feature_62",
+                "feature_64",
+                "feature_65",
+                "feature_72",
+                "feature_73",
+                "feature_85",
+                "feature_86",
+                "feature_89",
+                "feature_90",
+                "feature_93",
+                "feature_94",
+                "feature_105",
+                "feature_107",
+                "feature_113",
+                "feature_116",
+                "feature_120",
+                "feature_121",
+                "feature_122",
+                "feature_123",
+                "feature_124",
+                "feature_127",
+                "feature_129",
+                "feature_140",
+                "feature_141",
+                "feature_145",
+                "feature_146",
+                "feature_151",
+                "feature_153",
+                "feature_157"
+            ],
+            "scale": [
+                {
+                    "scale": [
+                        6.728922493664983,
+                        142.4611362937851,
+                        79.68246643891591,
+                        0.34275781053641347,
+                        8.767395433502616,
+                        207.78677506730395,
+                        7.739840426985543,
+                        57.45579137829557,
+                        352.3696802684129,
+                        3.94889817703344,
+                        145.80411879998744,
+                        16.796096813093875,
+                        373.609962671208,
+                        25.103298838981086,
+                        225.11392326736237,
+                        200.01513713661117,
+                        85.61834949330847,
+                        108.82389636710562,
+                        58.00098257724749,
+                        354.13043907559313,
+                        123.548868266679,
+                        270.96676463348894,
+                        277.5114182675642,
+                        16.52218997270792,
+                        162.41171086711267,
+                        63.44875479696151,
+                        295.4811890369969,
+                        184.497607643515,
+                        138.88137888558094,
+                        217.9944407685934,
+                        6.728922493664983,
+                        119.25271273979016,
+                        40.18890504448414,
+                        167.30970759328892,
+                        174.39669870371395,
+                        62.006122478277824,
+                        54.488049332054956,
+                        30.33791833716752,
+                        7.866205168650613,
+                        256.15383037460913,
+                        139.2445688816048,
+                        124.16162166025819,
+                        52.44077117094591,
+                        12.37465090005446,
+                        67.75360017575531,
+                        108.12139923169411,
+                        381.6489911569861,
+                        194.13361546839252,
+                        28.865388884240712,
+                        67.05336553958942,
+                        8.241066177464269,
+                        201.79447585604882,
+                        0.9382507610996653,
+                        330.05603385795325,
+                        33.374844383824076,
+                        261.48408220689,
+                        1.0,
+                        125.12595451986166,
+                        119.77243090192535,
+                        153.1168457822552,
+                        40.153623283098824,
+                        192.37596600639569,
+                        177.03096590782246,
+                        5.212545593684141,
+                        196.37710255327417,
+                        365.81501032600966,
+                        8.091884165182123,
+                        106.64549087182583,
+                        57.660273577176696,
+                        11.18828607658883,
+                        271.1145662461357,
+                        243.8923388068386,
+                        282.67858713663696,
+                        34.852912679287186,
+                        376.87745630541554,
+                        66.39920057855531,
+                        31.359336991697795,
+                        3.570941333089813,
+                        372.4395550534891,
+                        37.78440569482685,
+                        141.85681890027678,
+                        59.98495591340547,
+                        57.40404073747881,
+                        15.471846514002774,
+                        28.432066874640775,
+                        71.49852765649409,
+                        26.48196043062661,
+                        211.45108043140704,
+                        145.80411879998746,
+                        145.37888857221935,
+                        80.58753973492047,
+                        111.89349315409603,
+                        156.51848587665714,
+                        368.5951865292376,
+                        40.18890504448414,
+                        55.90532496886939,
+                        310.65545659100815,
+                        209.41873291185175,
+                        108.44751777202679,
+                        28.669346856358803,
+                        213.85687681184538,
+                        194.09751081543214,
+                        49.196513959136894,
+                        271.07556620405995,
+                        314.8038562259723,
+                        367.78647689648886,
+                        169.80395872246316,
+                        213.9263003549841,
+                        81.87786469224847,
+                        9.007691815210631,
+                        81.06674128825743,
+                        6.880336953070528,
+                        61.561384569028476,
+                        3.9173069916171728,
+                        76.6216357238798
+                    ],
+                    "mean": [
+                        0.2127872127872128,
+                        23.255744255744254,
+                        8.597402597402597,
+                        0.01998001998001998,
+                        0.2997002997002997,
+                        52.70729270729271,
+                        0.24475524475524477,
+                        3.878121878121878,
+                        221.56543456543457,
+                        0.12487512487512488,
+                        24.275724275724276,
+                        0.6823176823176823,
+                        275.45954045954045,
+                        1.8071928071928072,
+                        63.09090909090909,
+                        47.14085914085914,
+                        11.609390609390609,
+                        15.556443556443556,
+                        4.5644355644355645,
+                        228.5014985014985,
+                        20.906093906093908,
+                        119.24375624375624,
+                        127.14185814185814,
+                        0.5224775224775224,
+                        34.124875124875125,
+                        4.495504495504496,
+                        128.5064935064935,
+                        39.56043956043956,
+                        23.185814185814184,
+                        60.16183816183816,
+                        0.2127872127872128,
+                        17.425574425574425,
+                        1.7982017982017982,
+                        33.277722277722276,
+                        37.09090909090909,
+                        5.619380619380619,
+                        3.74025974025974,
+                        1.6433566433566433,
+                        0.24875124875124874,
+                        80.01998001998003,
+                        22.376623376623378,
+                        18.193806193806193,
+                        4.339660339660339,
+                        0.4155844155844156,
+                        7.665334665334665,
+                        13.32967032967033,
+                        299.94005994005994,
+                        44.374625374625374,
+                        1.1228771228771228,
+                        5.905094905094905,
+                        0.36163836163836166,
+                        48.62937062937063,
+                        0.1038961038961039,
+                        190.2957042957043,
+                        1.4885114885114885,
+                        85.73026973026973,
+                        0.0,
+                        18.273726273726275,
+                        20.2007992007992,
+                        29.692307692307693,
+                        1.965034965034965,
+                        46.184815184815186,
+                        37.57342657342657,
+                        0.16483516483516483,
+                        47.73626373626374,
+                        259.03996003996,
+                        0.4865134865134865,
+                        13.094905094905094,
+                        5.2847152847152845,
+                        0.6153846153846154,
+                        95.71228771228772,
+                        76.8971028971029,
+                        105.18481518481518,
+                        1.6413586413586414,
+                        238.15584415584416,
+                        5.383616383616384,
+                        1.7382617382617382,
+                        0.26373626373626374,
+                        205.35564435564436,
+                        2.995004995004995,
+                        23.775224775224775,
+                        5.163836163836164,
+                        5.415584415584416,
+                        1.2377622377622377,
+                        0.8991008991008991,
+                        6.370629370629371,
+                        0.9410589410589411,
+                        55.36863136863137,
+                        24.275724275724276,
+                        25.626373626373628,
+                        7.967032967032967,
+                        16.994005994005995,
+                        28.694305694305694,
+                        257.5174825174825,
+                        1.7982017982017982,
+                        3.921078921078921,
+                        161.86413586413587,
+                        54.72427572427572,
+                        13.368631368631368,
+                        1.074925074925075,
+                        57.327672327672325,
+                        53.33066933066933,
+                        2.6973026973026974,
+                        90.80919080919081,
+                        181.7912087912088,
+                        265.961038961039,
+                        33.26673326673327,
+                        55.633366633366634,
+                        7.731268731268731,
+                        0.2937062937062937,
+                        7.907092907092907,
+                        0.3106893106893107,
+                        5.314685314685315,
+                        0.12387612387612387,
+                        8.42057942057942
+                    ],
+                    "var": [
+                        45.27839792575058,
+                        20295.175354116414,
+                        6349.295457788961,
+                        0.11748291668371591,
+                        76.86722268740252,
+                        43175.34389287037,
+                        59.90512983519975,
+                        3301.1679629062237,
+                        124164.39157246353,
+                        15.593796812578026,
+                        21258.841059040853,
+                        282.1088681548223,
+                        139584.40420718145,
+                        630.1756125991892,
+                        50676.27844882391,
+                        40006.05508377737,
+                        7330.501769958315,
+                        11842.640420518543,
+                        3364.1139799261673,
+                        125408.36787987237,
+                        15264.322849977201,
+                        73422.98753594059,
+                        77012.58726887497,
+                        272.9827614942501,
+                        26377.563826782607,
+                        4025.7444852849458,
+                        87309.13307471751,
+                        34039.36722618041,
+                        19288.037401160287,
+                        47521.57620601177,
+                        45.27839792575058,
+                        14221.20949579891,
+                        1615.1480886745624,
+                        27992.538254951844,
+                        30414.20851875398,
+                        3844.7592247911907,
+                        2968.9475200124543,
+                        920.3892890326453,
+                        61.87718375530562,
+                        65614.78481558402,
+                        19389.049963023983,
+                        15416.108293305097,
+                        2750.0344810035112,
+                        153.13198489821866,
+                        4590.55033677611,
+                        11690.236971819384,
+                        145655.95245114525,
+                        37687.860654829696,
+                        833.2106754384472,
+                        4496.153830185797,
+                        67.91517174134555,
+                        40721.01048601747,
+                        0.8803144907041012,
+                        108936.9854860424,
+                        1113.8802376444733,
+                        68373.92524757961,
+                        0.0,
+                        15656.504494506491,
+                        14345.435204156482,
+                        23444.76846230692,
+                        1612.313462761016,
+                        37008.51229689391,
+                        31339.962890256604,
+                        27.170631566235958,
+                        38563.96640721916,
+                        133820.62177981855,
+                        65.47858934272519,
+                        11373.260723292686,
+                        3324.7071489948607,
+                        125.17774533159147,
+                        73503.10803083032,
+                        59483.47292866975,
+                        79907.18362556525,
+                        1214.7255222300173,
+                        142036.6170712404,
+                        4408.85383747122,
+                        983.4080165588657,
+                        12.751622004369251,
+                        138711.22216844093,
+                        1427.6613137112638,
+                        20123.35706850592,
+                        3598.1949359331984,
+                        3295.223892990127,
+                        239.37803455285976,
+                        808.3824267640452,
+                        5112.0394570464505,
+                        701.2942282492736,
+                        44711.55941560937,
+                        21258.841059040857,
+                        21135.02124249377,
+                        6494.351560527386,
+                        12520.153810225736,
+                        24498.036421121324,
+                        135862.41153252346,
+                        1615.1480886745626,
+                        3125.4053598748906,
+                        96506.81270976776,
+                        43856.20569440549,
+                        11760.864110914066,
+                        821.9314491702104,
+                        45734.76375971681,
+                        37673.843704746796,
+                        2420.2969857315516,
+                        73481.96259285169,
+                        99101.46789474263,
+                        135266.89258793154,
+                        28833.384397819973,
+                        45764.46198357087,
+                        6703.984726562148,
+                        81.1385118378126,
+                        6571.816543097262,
+                        47.33903658778784,
+                        3789.804070055817,
+                        15.345294066572785,
+                        5870.875061002935
+                    ],
+                    "n_samples_seen": 1001,
+                    "n_features_in": 115,
+                    "columns": [
+                        "feature_1",
+                        "feature_2",
+                        "feature_3",
+                        "feature_4",
+                        "feature_5",
+                        "feature_7",
+                        "feature_8",
+                        "feature_10",
+                        "feature_11",
+                        "feature_12",
+                        "feature_13",
+                        "feature_14",
+                        "feature_15",
+                        "feature_16",
+                        "feature_17",
+                        "feature_19",
+                        "feature_22",
+                        "feature_23",
+                        "feature_24",
+                        "feature_25",
+                        "feature_27",
+                        "feature_28",
+                        "feature_30",
+                        "feature_31",
+                        "feature_33",
+                        "feature_34",
+                        "feature_36",
+                        "feature_38",
+                        "feature_39",
+                        "feature_40",
+                        "feature_41",
+                        "feature_42",
+                        "feature_43",
+                        "feature_44",
+                        "feature_46",
+                        "feature_50",
+                        "feature_52",
+                        "feature_53",
+                        "feature_56",
+                        "feature_58",
+                        "feature_59",
+                        "feature_60",
+                        "feature_61",
+                        "feature_66",
+                        "feature_67",
+                        "feature_68",
+                        "feature_69",
+                        "feature_70",
+                        "feature_71",
+                        "feature_74",
+                        "feature_75",
+                        "feature_76",
+                        "feature_77",
+                        "feature_78",
+                        "feature_79",
+                        "feature_80",
+                        "feature_81",
+                        "feature_82",
+                        "feature_83",
+                        "feature_84",
+                        "feature_87",
+                        "feature_88",
+                        "feature_91",
+                        "feature_92",
+                        "feature_95",
+                        "feature_96",
+                        "feature_98",
+                        "feature_99",
+                        "feature_100",
+                        "feature_101",
+                        "feature_102",
+                        "feature_103",
+                        "feature_104",
+                        "feature_106",
+                        "feature_108",
+                        "feature_109",
+                        "feature_110",
+                        "feature_111",
+                        "feature_112",
+                        "feature_114",
+                        "feature_115",
+                        "feature_117",
+                        "feature_118",
+                        "feature_119",
+                        "feature_125",
+                        "feature_126",
+                        "feature_128",
+                        "feature_130",
+                        "feature_131",
+                        "feature_132",
+                        "feature_133",
+                        "feature_134",
+                        "feature_135",
+                        "feature_136",
+                        "feature_137",
+                        "feature_138",
+                        "feature_139",
+                        "feature_142",
+                        "feature_143",
+                        "feature_144",
+                        "feature_147",
+                        "feature_148",
+                        "feature_149",
+                        "feature_150",
+                        "feature_152",
+                        "feature_154",
+                        "feature_155",
+                        "feature_156",
+                        "feature_158",
+                        "feature_159",
+                        "feature_160",
+                        "feature_161",
+                        "feature_162",
+                        "feature_163",
+                        "feature_164"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "categorical_y": {
+                "0": 0,
+                "1": 1,
+                "2": 2,
+                "3": 3
+            },
+            "ml_task": "multiclass_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "feature_1": [
+                        "scale_normal"
+                    ],
+                    "feature_2": [
+                        "scale_normal"
+                    ],
+                    "feature_3": [
+                        "scale_normal"
+                    ],
+                    "feature_4": [
+                        "scale_normal"
+                    ],
+                    "feature_5": [
+                        "scale_normal"
+                    ],
+                    "feature_6": [
+                        "remove_column"
+                    ],
+                    "feature_7": [
+                        "scale_normal"
+                    ],
+                    "feature_8": [
+                        "scale_normal"
+                    ],
+                    "feature_9": [
+                        "remove_column"
+                    ],
+                    "feature_10": [
+                        "scale_normal"
+                    ],
+                    "feature_11": [
+                        "scale_normal"
+                    ],
+                    "feature_12": [
+                        "scale_normal"
+                    ],
+                    "feature_13": [
+                        "scale_normal"
+                    ],
+                    "feature_14": [
+                        "scale_normal"
+                    ],
+                    "feature_15": [
+                        "scale_normal"
+                    ],
+                    "feature_16": [
+                        "scale_normal"
+                    ],
+                    "feature_17": [
+                        "scale_normal"
+                    ],
+                    "feature_18": [
+                        "remove_column"
+                    ],
+                    "feature_19": [
+                        "scale_normal"
+                    ],
+                    "feature_20": [
+                        "remove_column"
+                    ],
+                    "feature_21": [
+                        "remove_column"
+                    ],
+                    "feature_22": [
+                        "scale_normal"
+                    ],
+                    "feature_23": [
+                        "scale_normal"
+                    ],
+                    "feature_24": [
+                        "scale_normal"
+                    ],
+                    "feature_25": [
+                        "scale_normal"
+                    ],
+                    "feature_26": [
+                        "remove_column"
+                    ],
+                    "feature_27": [
+                        "scale_normal"
+                    ],
+                    "feature_28": [
+                        "scale_normal"
+                    ],
+                    "feature_30": [
+                        "scale_normal"
+                    ],
+                    "feature_31": [
+                        "scale_normal"
+                    ],
+                    "feature_33": [
+                        "scale_normal"
+                    ],
+                    "feature_34": [
+                        "scale_normal"
+                    ],
+                    "feature_35": [
+                        "remove_column"
+                    ],
+                    "feature_36": [
+                        "scale_normal"
+                    ],
+                    "feature_37": [
+                        "remove_column"
+                    ],
+                    "feature_38": [
+                        "scale_normal"
+                    ],
+                    "feature_39": [
+                        "scale_normal"
+                    ],
+                    "feature_40": [
+                        "scale_normal"
+                    ],
+                    "feature_41": [
+                        "scale_normal"
+                    ],
+                    "feature_42": [
+                        "scale_normal"
+                    ],
+                    "feature_43": [
+                        "scale_normal"
+                    ],
+                    "feature_44": [
+                        "scale_normal"
+                    ],
+                    "feature_45": [
+                        "remove_column"
+                    ],
+                    "feature_46": [
+                        "scale_normal"
+                    ],
+                    "feature_47": [
+                        "remove_column"
+                    ],
+                    "feature_48": [
+                        "remove_column"
+                    ],
+                    "feature_49": [
+                        "remove_column"
+                    ],
+                    "feature_50": [
+                        "scale_normal"
+                    ],
+                    "feature_51": [
+                        "remove_column"
+                    ],
+                    "feature_52": [
+                        "scale_normal"
+                    ],
+                    "feature_53": [
+                        "scale_normal"
+                    ],
+                    "feature_54": [
+                        "remove_column"
+                    ],
+                    "feature_55": [
+                        "remove_column"
+                    ],
+                    "feature_56": [
+                        "scale_normal"
+                    ],
+                    "feature_57": [
+                        "remove_column"
+                    ],
+                    "feature_58": [
+                        "scale_normal"
+                    ],
+                    "feature_59": [
+                        "scale_normal"
+                    ],
+                    "feature_60": [
+                        "scale_normal"
+                    ],
+                    "feature_61": [
+                        "scale_normal"
+                    ],
+                    "feature_62": [
+                        "remove_column"
+                    ],
+                    "feature_64": [
+                        "remove_column"
+                    ],
+                    "feature_65": [
+                        "remove_column"
+                    ],
+                    "feature_66": [
+                        "scale_normal"
+                    ],
+                    "feature_67": [
+                        "scale_normal"
+                    ],
+                    "feature_68": [
+                        "scale_normal"
+                    ],
+                    "feature_69": [
+                        "scale_normal"
+                    ],
+                    "feature_70": [
+                        "scale_normal"
+                    ],
+                    "feature_71": [
+                        "scale_normal"
+                    ],
+                    "feature_72": [
+                        "remove_column"
+                    ],
+                    "feature_73": [
+                        "remove_column"
+                    ],
+                    "feature_74": [
+                        "scale_normal"
+                    ],
+                    "feature_75": [
+                        "scale_normal"
+                    ],
+                    "feature_76": [
+                        "scale_normal"
+                    ],
+                    "feature_77": [
+                        "scale_normal"
+                    ],
+                    "feature_78": [
+                        "scale_normal"
+                    ],
+                    "feature_79": [
+                        "scale_normal"
+                    ],
+                    "feature_80": [
+                        "scale_normal"
+                    ],
+                    "feature_81": [
+                        "scale_normal"
+                    ],
+                    "feature_82": [
+                        "scale_normal"
+                    ],
+                    "feature_83": [
+                        "scale_normal"
+                    ],
+                    "feature_84": [
+                        "scale_normal"
+                    ],
+                    "feature_85": [
+                        "remove_column"
+                    ],
+                    "feature_86": [
+                        "remove_column"
+                    ],
+                    "feature_87": [
+                        "scale_normal"
+                    ],
+                    "feature_88": [
+                        "scale_normal"
+                    ],
+                    "feature_89": [
+                        "remove_column"
+                    ],
+                    "feature_90": [
+                        "remove_column"
+                    ],
+                    "feature_91": [
+                        "scale_normal"
+                    ],
+                    "feature_92": [
+                        "scale_normal"
+                    ],
+                    "feature_93": [
+                        "remove_column"
+                    ],
+                    "feature_94": [
+                        "remove_column"
+                    ],
+                    "feature_95": [
+                        "scale_normal"
+                    ],
+                    "feature_96": [
+                        "scale_normal"
+                    ],
+                    "feature_98": [
+                        "scale_normal"
+                    ],
+                    "feature_99": [
+                        "scale_normal"
+                    ],
+                    "feature_100": [
+                        "scale_normal"
+                    ],
+                    "feature_101": [
+                        "scale_normal"
+                    ],
+                    "feature_102": [
+                        "scale_normal"
+                    ],
+                    "feature_103": [
+                        "scale_normal"
+                    ],
+                    "feature_104": [
+                        "scale_normal"
+                    ],
+                    "feature_105": [
+                        "remove_column"
+                    ],
+                    "feature_106": [
+                        "scale_normal"
+                    ],
+                    "feature_107": [
+                        "remove_column"
+                    ],
+                    "feature_108": [
+                        "scale_normal"
+                    ],
+                    "feature_109": [
+                        "scale_normal"
+                    ],
+                    "feature_110": [
+                        "scale_normal"
+                    ],
+                    "feature_111": [
+                        "scale_normal"
+                    ],
+                    "feature_112": [
+                        "scale_normal"
+                    ],
+                    "feature_113": [
+                        "remove_column"
+                    ],
+                    "feature_114": [
+                        "scale_normal"
+                    ],
+                    "feature_115": [
+                        "scale_normal"
+                    ],
+                    "feature_116": [
+                        "remove_column"
+                    ],
+                    "feature_117": [
+                        "scale_normal"
+                    ],
+                    "feature_118": [
+                        "scale_normal"
+                    ],
+                    "feature_119": [
+                        "scale_normal"
+                    ],
+                    "feature_120": [
+                        "remove_column"
+                    ],
+                    "feature_121": [
+                        "remove_column"
+                    ],
+                    "feature_122": [
+                        "remove_column"
+                    ],
+                    "feature_123": [
+                        "remove_column"
+                    ],
+                    "feature_124": [
+                        "remove_column"
+                    ],
+                    "feature_125": [
+                        "scale_normal"
+                    ],
+                    "feature_126": [
+                        "scale_normal"
+                    ],
+                    "feature_127": [
+                        "remove_column"
+                    ],
+                    "feature_128": [
+                        "scale_normal"
+                    ],
+                    "feature_129": [
+                        "remove_column"
+                    ],
+                    "feature_130": [
+                        "scale_normal"
+                    ],
+                    "feature_131": [
+                        "scale_normal"
+                    ],
+                    "feature_132": [
+                        "scale_normal"
+                    ],
+                    "feature_133": [
+                        "scale_normal"
+                    ],
+                    "feature_134": [
+                        "scale_normal"
+                    ],
+                    "feature_135": [
+                        "scale_normal"
+                    ],
+                    "feature_136": [
+                        "scale_normal"
+                    ],
+                    "feature_137": [
+                        "scale_normal"
+                    ],
+                    "feature_138": [
+                        "scale_normal"
+                    ],
+                    "feature_139": [
+                        "scale_normal"
+                    ],
+                    "feature_140": [
+                        "remove_column"
+                    ],
+                    "feature_141": [
+                        "remove_column"
+                    ],
+                    "feature_142": [
+                        "scale_normal"
+                    ],
+                    "feature_143": [
+                        "scale_normal"
+                    ],
+                    "feature_144": [
+                        "scale_normal"
+                    ],
+                    "feature_145": [
+                        "remove_column"
+                    ],
+                    "feature_146": [
+                        "remove_column"
+                    ],
+                    "feature_147": [
+                        "scale_normal"
+                    ],
+                    "feature_148": [
+                        "scale_normal"
+                    ],
+                    "feature_149": [
+                        "scale_normal"
+                    ],
+                    "feature_150": [
+                        "scale_normal"
+                    ],
+                    "feature_151": [
+                        "remove_column"
+                    ],
+                    "feature_152": [
+                        "scale_normal"
+                    ],
+                    "feature_153": [
+                        "remove_column"
+                    ],
+                    "feature_154": [
+                        "scale_normal"
+                    ],
+                    "feature_155": [
+                        "scale_normal"
+                    ],
+                    "feature_156": [
+                        "scale_normal"
+                    ],
+                    "feature_157": [
+                        "remove_column"
+                    ],
+                    "feature_158": [
+                        "scale_normal"
+                    ],
+                    "feature_159": [
+                        "scale_normal"
+                    ],
+                    "feature_160": [
+                        "scale_normal"
+                    ],
+                    "feature_161": [
+                        "scale_normal"
+                    ],
+                    "feature_162": [
+                        "scale_normal"
+                    ],
+                    "feature_163": [
+                        "scale_normal"
+                    ],
+                    "feature_164": [
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "categorical_to_int"
+                ],
+                "ml_task": "multiclass_classification"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.5.0",
+            "algorithm_name": "Logistic Regression",
+            "algorithm_short_name": "Linear",
+            "uid": "f0702f2d-4fc0-45e3-858e-e84da4dc4d93",
+            "params": {
+                "model_type": "Linear",
+                "ml_task": "multiclass_classification",
+                "n_jobs": -1,
+                "seed": 1235,
+                "num_class": 4,
+                "explain_level": 2
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_steps": 1,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "feature_1": [
+                    "scale_normal"
+                ],
+                "feature_2": [
+                    "scale_normal"
+                ],
+                "feature_3": [
+                    "scale_normal"
+                ],
+                "feature_4": [
+                    "scale_normal"
+                ],
+                "feature_5": [
+                    "scale_normal"
+                ],
+                "feature_6": [
+                    "remove_column"
+                ],
+                "feature_7": [
+                    "scale_normal"
+                ],
+                "feature_8": [
+                    "scale_normal"
+                ],
+                "feature_9": [
+                    "remove_column"
+                ],
+                "feature_10": [
+                    "scale_normal"
+                ],
+                "feature_11": [
+                    "scale_normal"
+                ],
+                "feature_12": [
+                    "scale_normal"
+                ],
+                "feature_13": [
+                    "scale_normal"
+                ],
+                "feature_14": [
+                    "scale_normal"
+                ],
+                "feature_15": [
+                    "scale_normal"
+                ],
+                "feature_16": [
+                    "scale_normal"
+                ],
+                "feature_17": [
+                    "scale_normal"
+                ],
+                "feature_18": [
+                    "remove_column"
+                ],
+                "feature_19": [
+                    "scale_normal"
+                ],
+                "feature_20": [
+                    "remove_column"
+                ],
+                "feature_21": [
+                    "remove_column"
+                ],
+                "feature_22": [
+                    "scale_normal"
+                ],
+                "feature_23": [
+                    "scale_normal"
+                ],
+                "feature_24": [
+                    "scale_normal"
+                ],
+                "feature_25": [
+                    "scale_normal"
+                ],
+                "feature_26": [
+                    "remove_column"
+                ],
+                "feature_27": [
+                    "scale_normal"
+                ],
+                "feature_28": [
+                    "scale_normal"
+                ],
+                "feature_30": [
+                    "scale_normal"
+                ],
+                "feature_31": [
+                    "scale_normal"
+                ],
+                "feature_33": [
+                    "scale_normal"
+                ],
+                "feature_34": [
+                    "scale_normal"
+                ],
+                "feature_35": [
+                    "remove_column"
+                ],
+                "feature_36": [
+                    "scale_normal"
+                ],
+                "feature_37": [
+                    "remove_column"
+                ],
+                "feature_38": [
+                    "scale_normal"
+                ],
+                "feature_39": [
+                    "scale_normal"
+                ],
+                "feature_40": [
+                    "scale_normal"
+                ],
+                "feature_41": [
+                    "scale_normal"
+                ],
+                "feature_42": [
+                    "scale_normal"
+                ],
+                "feature_43": [
+                    "scale_normal"
+                ],
+                "feature_44": [
+                    "scale_normal"
+                ],
+                "feature_45": [
+                    "remove_column"
+                ],
+                "feature_46": [
+                    "scale_normal"
+                ],
+                "feature_47": [
+                    "remove_column"
+                ],
+                "feature_48": [
+                    "remove_column"
+                ],
+                "feature_49": [
+                    "remove_column"
+                ],
+                "feature_50": [
+                    "scale_normal"
+                ],
+                "feature_51": [
+                    "remove_column"
+                ],
+                "feature_52": [
+                    "scale_normal"
+                ],
+                "feature_53": [
+                    "scale_normal"
+                ],
+                "feature_54": [
+                    "remove_column"
+                ],
+                "feature_55": [
+                    "remove_column"
+                ],
+                "feature_56": [
+                    "scale_normal"
+                ],
+                "feature_57": [
+                    "remove_column"
+                ],
+                "feature_58": [
+                    "scale_normal"
+                ],
+                "feature_59": [
+                    "scale_normal"
+                ],
+                "feature_60": [
+                    "scale_normal"
+                ],
+                "feature_61": [
+                    "scale_normal"
+                ],
+                "feature_62": [
+                    "remove_column"
+                ],
+                "feature_64": [
+                    "remove_column"
+                ],
+                "feature_65": [
+                    "remove_column"
+                ],
+                "feature_66": [
+                    "scale_normal"
+                ],
+                "feature_67": [
+                    "scale_normal"
+                ],
+                "feature_68": [
+                    "scale_normal"
+                ],
+                "feature_69": [
+                    "scale_normal"
+                ],
+                "feature_70": [
+                    "scale_normal"
+                ],
+                "feature_71": [
+                    "scale_normal"
+                ],
+                "feature_72": [
+                    "remove_column"
+                ],
+                "feature_73": [
+                    "remove_column"
+                ],
+                "feature_74": [
+                    "scale_normal"
+                ],
+                "feature_75": [
+                    "scale_normal"
+                ],
+                "feature_76": [
+                    "scale_normal"
+                ],
+                "feature_77": [
+                    "scale_normal"
+                ],
+                "feature_78": [
+                    "scale_normal"
+                ],
+                "feature_79": [
+                    "scale_normal"
+                ],
+                "feature_80": [
+                    "scale_normal"
+                ],
+                "feature_81": [
+                    "scale_normal"
+                ],
+                "feature_82": [
+                    "scale_normal"
+                ],
+                "feature_83": [
+                    "scale_normal"
+                ],
+                "feature_84": [
+                    "scale_normal"
+                ],
+                "feature_85": [
+                    "remove_column"
+                ],
+                "feature_86": [
+                    "remove_column"
+                ],
+                "feature_87": [
+                    "scale_normal"
+                ],
+                "feature_88": [
+                    "scale_normal"
+                ],
+                "feature_89": [
+                    "remove_column"
+                ],
+                "feature_90": [
+                    "remove_column"
+                ],
+                "feature_91": [
+                    "scale_normal"
+                ],
+                "feature_92": [
+                    "scale_normal"
+                ],
+                "feature_93": [
+                    "remove_column"
+                ],
+                "feature_94": [
+                    "remove_column"
+                ],
+                "feature_95": [
+                    "scale_normal"
+                ],
+                "feature_96": [
+                    "scale_normal"
+                ],
+                "feature_98": [
+                    "scale_normal"
+                ],
+                "feature_99": [
+                    "scale_normal"
+                ],
+                "feature_100": [
+                    "scale_normal"
+                ],
+                "feature_101": [
+                    "scale_normal"
+                ],
+                "feature_102": [
+                    "scale_normal"
+                ],
+                "feature_103": [
+                    "scale_normal"
+                ],
+                "feature_104": [
+                    "scale_normal"
+                ],
+                "feature_105": [
+                    "remove_column"
+                ],
+                "feature_106": [
+                    "scale_normal"
+                ],
+                "feature_107": [
+                    "remove_column"
+                ],
+                "feature_108": [
+                    "scale_normal"
+                ],
+                "feature_109": [
+                    "scale_normal"
+                ],
+                "feature_110": [
+                    "scale_normal"
+                ],
+                "feature_111": [
+                    "scale_normal"
+                ],
+                "feature_112": [
+                    "scale_normal"
+                ],
+                "feature_113": [
+                    "remove_column"
+                ],
+                "feature_114": [
+                    "scale_normal"
+                ],
+                "feature_115": [
+                    "scale_normal"
+                ],
+                "feature_116": [
+                    "remove_column"
+                ],
+                "feature_117": [
+                    "scale_normal"
+                ],
+                "feature_118": [
+                    "scale_normal"
+                ],
+                "feature_119": [
+                    "scale_normal"
+                ],
+                "feature_120": [
+                    "remove_column"
+                ],
+                "feature_121": [
+                    "remove_column"
+                ],
+                "feature_122": [
+                    "remove_column"
+                ],
+                "feature_123": [
+                    "remove_column"
+                ],
+                "feature_124": [
+                    "remove_column"
+                ],
+                "feature_125": [
+                    "scale_normal"
+                ],
+                "feature_126": [
+                    "scale_normal"
+                ],
+                "feature_127": [
+                    "remove_column"
+                ],
+                "feature_128": [
+                    "scale_normal"
+                ],
+                "feature_129": [
+                    "remove_column"
+                ],
+                "feature_130": [
+                    "scale_normal"
+                ],
+                "feature_131": [
+                    "scale_normal"
+                ],
+                "feature_132": [
+                    "scale_normal"
+                ],
+                "feature_133": [
+                    "scale_normal"
+                ],
+                "feature_134": [
+                    "scale_normal"
+                ],
+                "feature_135": [
+                    "scale_normal"
+                ],
+                "feature_136": [
+                    "scale_normal"
+                ],
+                "feature_137": [
+                    "scale_normal"
+                ],
+                "feature_138": [
+                    "scale_normal"
+                ],
+                "feature_139": [
+                    "scale_normal"
+                ],
+                "feature_140": [
+                    "remove_column"
+                ],
+                "feature_141": [
+                    "remove_column"
+                ],
+                "feature_142": [
+                    "scale_normal"
+                ],
+                "feature_143": [
+                    "scale_normal"
+                ],
+                "feature_144": [
+                    "scale_normal"
+                ],
+                "feature_145": [
+                    "remove_column"
+                ],
+                "feature_146": [
+                    "remove_column"
+                ],
+                "feature_147": [
+                    "scale_normal"
+                ],
+                "feature_148": [
+                    "scale_normal"
+                ],
+                "feature_149": [
+                    "scale_normal"
+                ],
+                "feature_150": [
+                    "scale_normal"
+                ],
+                "feature_151": [
+                    "remove_column"
+                ],
+                "feature_152": [
+                    "scale_normal"
+                ],
+                "feature_153": [
+                    "remove_column"
+                ],
+                "feature_154": [
+                    "scale_normal"
+                ],
+                "feature_155": [
+                    "scale_normal"
+                ],
+                "feature_156": [
+                    "scale_normal"
+                ],
+                "feature_157": [
+                    "remove_column"
+                ],
+                "feature_158": [
+                    "scale_normal"
+                ],
+                "feature_159": [
+                    "scale_normal"
+                ],
+                "feature_160": [
+                    "scale_normal"
+                ],
+                "feature_161": [
+                    "scale_normal"
+                ],
+                "feature_162": [
+                    "scale_normal"
+                ],
+                "feature_163": [
+                    "scale_normal"
+                ],
+                "feature_164": [
+                    "scale_normal"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "categorical_to_int"
+            ],
+            "ml_task": "multiclass_classification"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "stratify": true,
+            "X_path": "AutoML_Results\\X.data",
+            "y_path": "AutoML_Results\\y.data",
+            "results_path": "AutoML_Results"
+        },
+        "learner": {
+            "model_type": "Linear",
+            "ml_task": "multiclass_classification",
+            "n_jobs": -1,
+            "seed": 1235,
+            "num_class": 4,
+            "explain_level": 2
+        },
+        "automl_random_state": 1234,
+        "ml_task": "multiclass_classification",
+        "explain_level": 2,
+        "name": "3_Linear",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 360.0
+    },
+    "saved": [
+        "3_Linear\\learner_fold_0.linear"
+    ],
+    "predictions_fname": "3_Linear\\predictions_validation.csv",
+    "metric_name": "logloss",
+    "final_loss": "1.7813072263824499",
+    "train_time": 2.4464433193206787,
+    "is_stacked": false,
+    "joblib_version": "1.4.2"
+}

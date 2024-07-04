@@ -1,0 +1,1864 @@
+{
+    "fit_level": "finished",
+    "time_controller": {
+        "total_time_limit": 3600,
+        "model_time_limit": null,
+        "steps": [
+            "simple_algorithms",
+            "default_algorithms",
+            "ensemble"
+        ],
+        "algorithms": [
+            "Baseline",
+            "Linear",
+            "Decision Tree",
+            "Random Forest",
+            "Xgboost",
+            "Neural Network"
+        ],
+        "spend": [
+            {
+                "model_name": "prepare_data",
+                "model_type": "prepare_data",
+                "fit_level": "prepare_data",
+                "train_time": 0.2380506992340088
+            },
+            {
+                "model_name": "1_Baseline",
+                "model_type": "Baseline",
+                "fit_level": "simple_algorithms",
+                "train_time": 0.4371480941772461
+            },
+            {
+                "model_name": "2_DecisionTree",
+                "model_type": "Decision Tree",
+                "fit_level": "simple_algorithms",
+                "train_time": 20.88628077507019
+            },
+            {
+                "model_name": "3_Linear",
+                "model_type": "Linear",
+                "fit_level": "simple_algorithms",
+                "train_time": 2.4464433193206787
+            },
+            {
+                "model_name": "4_Default_Xgboost",
+                "model_type": "Xgboost",
+                "fit_level": "default_algorithms",
+                "train_time": 4.171749591827393
+            },
+            {
+                "model_name": "5_Default_NeuralNetwork",
+                "model_type": "Neural Network",
+                "fit_level": "default_algorithms",
+                "train_time": 1.9634196758270264
+            },
+            {
+                "model_name": "6_Default_RandomForest",
+                "model_type": "Random Forest",
+                "fit_level": "default_algorithms",
+                "train_time": 4.943128824234009
+            },
+            {
+                "model_name": "Ensemble",
+                "model_type": "Ensemble",
+                "fit_level": "ensemble",
+                "train_time": 0.4630875587463379
+            }
+        ],
+        "is_hill_climbing": false,
+        "is_stacking": false
+    },
+    "all_params": {
+        "simple_algorithms": [
+            {
+                "additional": {
+                    "max_steps": 1,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "feature_6": [
+                            "remove_column"
+                        ],
+                        "feature_9": [
+                            "remove_column"
+                        ],
+                        "feature_18": [
+                            "remove_column"
+                        ],
+                        "feature_20": [
+                            "remove_column"
+                        ],
+                        "feature_21": [
+                            "remove_column"
+                        ],
+                        "feature_26": [
+                            "remove_column"
+                        ],
+                        "feature_35": [
+                            "remove_column"
+                        ],
+                        "feature_37": [
+                            "remove_column"
+                        ],
+                        "feature_45": [
+                            "remove_column"
+                        ],
+                        "feature_47": [
+                            "remove_column"
+                        ],
+                        "feature_48": [
+                            "remove_column"
+                        ],
+                        "feature_49": [
+                            "remove_column"
+                        ],
+                        "feature_51": [
+                            "remove_column"
+                        ],
+                        "feature_54": [
+                            "remove_column"
+                        ],
+                        "feature_55": [
+                            "remove_column"
+                        ],
+                        "feature_57": [
+                            "remove_column"
+                        ],
+                        "feature_62": [
+                            "remove_column"
+                        ],
+                        "feature_64": [
+                            "remove_column"
+                        ],
+                        "feature_65": [
+                            "remove_column"
+                        ],
+                        "feature_72": [
+                            "remove_column"
+                        ],
+                        "feature_73": [
+                            "remove_column"
+                        ],
+                        "feature_85": [
+                            "remove_column"
+                        ],
+                        "feature_86": [
+                            "remove_column"
+                        ],
+                        "feature_89": [
+                            "remove_column"
+                        ],
+                        "feature_90": [
+                            "remove_column"
+                        ],
+                        "feature_93": [
+                            "remove_column"
+                        ],
+                        "feature_94": [
+                            "remove_column"
+                        ],
+                        "feature_105": [
+                            "remove_column"
+                        ],
+                        "feature_107": [
+                            "remove_column"
+                        ],
+                        "feature_113": [
+                            "remove_column"
+                        ],
+                        "feature_116": [
+                            "remove_column"
+                        ],
+                        "feature_120": [
+                            "remove_column"
+                        ],
+                        "feature_121": [
+                            "remove_column"
+                        ],
+                        "feature_122": [
+                            "remove_column"
+                        ],
+                        "feature_123": [
+                            "remove_column"
+                        ],
+                        "feature_124": [
+                            "remove_column"
+                        ],
+                        "feature_127": [
+                            "remove_column"
+                        ],
+                        "feature_129": [
+                            "remove_column"
+                        ],
+                        "feature_140": [
+                            "remove_column"
+                        ],
+                        "feature_141": [
+                            "remove_column"
+                        ],
+                        "feature_145": [
+                            "remove_column"
+                        ],
+                        "feature_146": [
+                            "remove_column"
+                        ],
+                        "feature_151": [
+                            "remove_column"
+                        ],
+                        "feature_153": [
+                            "remove_column"
+                        ],
+                        "feature_157": [
+                            "remove_column"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.75,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "AutoML_Results\\X.data",
+                    "y_path": "AutoML_Results\\y.data",
+                    "results_path": "AutoML_Results"
+                },
+                "learner": {
+                    "model_type": "Baseline",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "seed": 1235,
+                    "num_class": 4,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "1_Baseline",
+                "status": "trained",
+                "final_loss": 1.3144565847145702,
+                "train_time": 1.3009586334228516,
+                "data_type": "original",
+                "max_time_for_learner": 360.0
+            },
+            {
+                "additional": {
+                    "trees_in_step": 1,
+                    "train_cant_improve_limit": 0,
+                    "max_steps": 1,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "feature_6": [
+                            "remove_column"
+                        ],
+                        "feature_9": [
+                            "remove_column"
+                        ],
+                        "feature_18": [
+                            "remove_column"
+                        ],
+                        "feature_20": [
+                            "remove_column"
+                        ],
+                        "feature_21": [
+                            "remove_column"
+                        ],
+                        "feature_26": [
+                            "remove_column"
+                        ],
+                        "feature_35": [
+                            "remove_column"
+                        ],
+                        "feature_37": [
+                            "remove_column"
+                        ],
+                        "feature_45": [
+                            "remove_column"
+                        ],
+                        "feature_47": [
+                            "remove_column"
+                        ],
+                        "feature_48": [
+                            "remove_column"
+                        ],
+                        "feature_49": [
+                            "remove_column"
+                        ],
+                        "feature_51": [
+                            "remove_column"
+                        ],
+                        "feature_54": [
+                            "remove_column"
+                        ],
+                        "feature_55": [
+                            "remove_column"
+                        ],
+                        "feature_57": [
+                            "remove_column"
+                        ],
+                        "feature_62": [
+                            "remove_column"
+                        ],
+                        "feature_64": [
+                            "remove_column"
+                        ],
+                        "feature_65": [
+                            "remove_column"
+                        ],
+                        "feature_72": [
+                            "remove_column"
+                        ],
+                        "feature_73": [
+                            "remove_column"
+                        ],
+                        "feature_85": [
+                            "remove_column"
+                        ],
+                        "feature_86": [
+                            "remove_column"
+                        ],
+                        "feature_89": [
+                            "remove_column"
+                        ],
+                        "feature_90": [
+                            "remove_column"
+                        ],
+                        "feature_93": [
+                            "remove_column"
+                        ],
+                        "feature_94": [
+                            "remove_column"
+                        ],
+                        "feature_105": [
+                            "remove_column"
+                        ],
+                        "feature_107": [
+                            "remove_column"
+                        ],
+                        "feature_113": [
+                            "remove_column"
+                        ],
+                        "feature_116": [
+                            "remove_column"
+                        ],
+                        "feature_120": [
+                            "remove_column"
+                        ],
+                        "feature_121": [
+                            "remove_column"
+                        ],
+                        "feature_122": [
+                            "remove_column"
+                        ],
+                        "feature_123": [
+                            "remove_column"
+                        ],
+                        "feature_124": [
+                            "remove_column"
+                        ],
+                        "feature_127": [
+                            "remove_column"
+                        ],
+                        "feature_129": [
+                            "remove_column"
+                        ],
+                        "feature_140": [
+                            "remove_column"
+                        ],
+                        "feature_141": [
+                            "remove_column"
+                        ],
+                        "feature_145": [
+                            "remove_column"
+                        ],
+                        "feature_146": [
+                            "remove_column"
+                        ],
+                        "feature_151": [
+                            "remove_column"
+                        ],
+                        "feature_153": [
+                            "remove_column"
+                        ],
+                        "feature_157": [
+                            "remove_column"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.75,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "AutoML_Results\\X.data",
+                    "y_path": "AutoML_Results\\y.data",
+                    "results_path": "AutoML_Results"
+                },
+                "learner": {
+                    "model_type": "Decision Tree",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "seed": 1235,
+                    "criterion": "gini",
+                    "max_depth": 3,
+                    "num_class": 4,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "2_DecisionTree",
+                "status": "trained",
+                "final_loss": 1.4061673027285335,
+                "train_time": 22.03948998451233,
+                "data_type": "original",
+                "max_time_for_learner": 360.0
+            },
+            {
+                "additional": {
+                    "max_steps": 1,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "feature_1": [
+                            "scale_normal"
+                        ],
+                        "feature_2": [
+                            "scale_normal"
+                        ],
+                        "feature_3": [
+                            "scale_normal"
+                        ],
+                        "feature_4": [
+                            "scale_normal"
+                        ],
+                        "feature_5": [
+                            "scale_normal"
+                        ],
+                        "feature_6": [
+                            "remove_column"
+                        ],
+                        "feature_7": [
+                            "scale_normal"
+                        ],
+                        "feature_8": [
+                            "scale_normal"
+                        ],
+                        "feature_9": [
+                            "remove_column"
+                        ],
+                        "feature_10": [
+                            "scale_normal"
+                        ],
+                        "feature_11": [
+                            "scale_normal"
+                        ],
+                        "feature_12": [
+                            "scale_normal"
+                        ],
+                        "feature_13": [
+                            "scale_normal"
+                        ],
+                        "feature_14": [
+                            "scale_normal"
+                        ],
+                        "feature_15": [
+                            "scale_normal"
+                        ],
+                        "feature_16": [
+                            "scale_normal"
+                        ],
+                        "feature_17": [
+                            "scale_normal"
+                        ],
+                        "feature_18": [
+                            "remove_column"
+                        ],
+                        "feature_19": [
+                            "scale_normal"
+                        ],
+                        "feature_20": [
+                            "remove_column"
+                        ],
+                        "feature_21": [
+                            "remove_column"
+                        ],
+                        "feature_22": [
+                            "scale_normal"
+                        ],
+                        "feature_23": [
+                            "scale_normal"
+                        ],
+                        "feature_24": [
+                            "scale_normal"
+                        ],
+                        "feature_25": [
+                            "scale_normal"
+                        ],
+                        "feature_26": [
+                            "remove_column"
+                        ],
+                        "feature_27": [
+                            "scale_normal"
+                        ],
+                        "feature_28": [
+                            "scale_normal"
+                        ],
+                        "feature_30": [
+                            "scale_normal"
+                        ],
+                        "feature_31": [
+                            "scale_normal"
+                        ],
+                        "feature_33": [
+                            "scale_normal"
+                        ],
+                        "feature_34": [
+                            "scale_normal"
+                        ],
+                        "feature_35": [
+                            "remove_column"
+                        ],
+                        "feature_36": [
+                            "scale_normal"
+                        ],
+                        "feature_37": [
+                            "remove_column"
+                        ],
+                        "feature_38": [
+                            "scale_normal"
+                        ],
+                        "feature_39": [
+                            "scale_normal"
+                        ],
+                        "feature_40": [
+                            "scale_normal"
+                        ],
+                        "feature_41": [
+                            "scale_normal"
+                        ],
+                        "feature_42": [
+                            "scale_normal"
+                        ],
+                        "feature_43": [
+                            "scale_normal"
+                        ],
+                        "feature_44": [
+                            "scale_normal"
+                        ],
+                        "feature_45": [
+                            "remove_column"
+                        ],
+                        "feature_46": [
+                            "scale_normal"
+                        ],
+                        "feature_47": [
+                            "remove_column"
+                        ],
+                        "feature_48": [
+                            "remove_column"
+                        ],
+                        "feature_49": [
+                            "remove_column"
+                        ],
+                        "feature_50": [
+                            "scale_normal"
+                        ],
+                        "feature_51": [
+                            "remove_column"
+                        ],
+                        "feature_52": [
+                            "scale_normal"
+                        ],
+                        "feature_53": [
+                            "scale_normal"
+                        ],
+                        "feature_54": [
+                            "remove_column"
+                        ],
+                        "feature_55": [
+                            "remove_column"
+                        ],
+                        "feature_56": [
+                            "scale_normal"
+                        ],
+                        "feature_57": [
+                            "remove_column"
+                        ],
+                        "feature_58": [
+                            "scale_normal"
+                        ],
+                        "feature_59": [
+                            "scale_normal"
+                        ],
+                        "feature_60": [
+                            "scale_normal"
+                        ],
+                        "feature_61": [
+                            "scale_normal"
+                        ],
+                        "feature_62": [
+                            "remove_column"
+                        ],
+                        "feature_64": [
+                            "remove_column"
+                        ],
+                        "feature_65": [
+                            "remove_column"
+                        ],
+                        "feature_66": [
+                            "scale_normal"
+                        ],
+                        "feature_67": [
+                            "scale_normal"
+                        ],
+                        "feature_68": [
+                            "scale_normal"
+                        ],
+                        "feature_69": [
+                            "scale_normal"
+                        ],
+                        "feature_70": [
+                            "scale_normal"
+                        ],
+                        "feature_71": [
+                            "scale_normal"
+                        ],
+                        "feature_72": [
+                            "remove_column"
+                        ],
+                        "feature_73": [
+                            "remove_column"
+                        ],
+                        "feature_74": [
+                            "scale_normal"
+                        ],
+                        "feature_75": [
+                            "scale_normal"
+                        ],
+                        "feature_76": [
+                            "scale_normal"
+                        ],
+                        "feature_77": [
+                            "scale_normal"
+                        ],
+                        "feature_78": [
+                            "scale_normal"
+                        ],
+                        "feature_79": [
+                            "scale_normal"
+                        ],
+                        "feature_80": [
+                            "scale_normal"
+                        ],
+                        "feature_81": [
+                            "scale_normal"
+                        ],
+                        "feature_82": [
+                            "scale_normal"
+                        ],
+                        "feature_83": [
+                            "scale_normal"
+                        ],
+                        "feature_84": [
+                            "scale_normal"
+                        ],
+                        "feature_85": [
+                            "remove_column"
+                        ],
+                        "feature_86": [
+                            "remove_column"
+                        ],
+                        "feature_87": [
+                            "scale_normal"
+                        ],
+                        "feature_88": [
+                            "scale_normal"
+                        ],
+                        "feature_89": [
+                            "remove_column"
+                        ],
+                        "feature_90": [
+                            "remove_column"
+                        ],
+                        "feature_91": [
+                            "scale_normal"
+                        ],
+                        "feature_92": [
+                            "scale_normal"
+                        ],
+                        "feature_93": [
+                            "remove_column"
+                        ],
+                        "feature_94": [
+                            "remove_column"
+                        ],
+                        "feature_95": [
+                            "scale_normal"
+                        ],
+                        "feature_96": [
+                            "scale_normal"
+                        ],
+                        "feature_98": [
+                            "scale_normal"
+                        ],
+                        "feature_99": [
+                            "scale_normal"
+                        ],
+                        "feature_100": [
+                            "scale_normal"
+                        ],
+                        "feature_101": [
+                            "scale_normal"
+                        ],
+                        "feature_102": [
+                            "scale_normal"
+                        ],
+                        "feature_103": [
+                            "scale_normal"
+                        ],
+                        "feature_104": [
+                            "scale_normal"
+                        ],
+                        "feature_105": [
+                            "remove_column"
+                        ],
+                        "feature_106": [
+                            "scale_normal"
+                        ],
+                        "feature_107": [
+                            "remove_column"
+                        ],
+                        "feature_108": [
+                            "scale_normal"
+                        ],
+                        "feature_109": [
+                            "scale_normal"
+                        ],
+                        "feature_110": [
+                            "scale_normal"
+                        ],
+                        "feature_111": [
+                            "scale_normal"
+                        ],
+                        "feature_112": [
+                            "scale_normal"
+                        ],
+                        "feature_113": [
+                            "remove_column"
+                        ],
+                        "feature_114": [
+                            "scale_normal"
+                        ],
+                        "feature_115": [
+                            "scale_normal"
+                        ],
+                        "feature_116": [
+                            "remove_column"
+                        ],
+                        "feature_117": [
+                            "scale_normal"
+                        ],
+                        "feature_118": [
+                            "scale_normal"
+                        ],
+                        "feature_119": [
+                            "scale_normal"
+                        ],
+                        "feature_120": [
+                            "remove_column"
+                        ],
+                        "feature_121": [
+                            "remove_column"
+                        ],
+                        "feature_122": [
+                            "remove_column"
+                        ],
+                        "feature_123": [
+                            "remove_column"
+                        ],
+                        "feature_124": [
+                            "remove_column"
+                        ],
+                        "feature_125": [
+                            "scale_normal"
+                        ],
+                        "feature_126": [
+                            "scale_normal"
+                        ],
+                        "feature_127": [
+                            "remove_column"
+                        ],
+                        "feature_128": [
+                            "scale_normal"
+                        ],
+                        "feature_129": [
+                            "remove_column"
+                        ],
+                        "feature_130": [
+                            "scale_normal"
+                        ],
+                        "feature_131": [
+                            "scale_normal"
+                        ],
+                        "feature_132": [
+                            "scale_normal"
+                        ],
+                        "feature_133": [
+                            "scale_normal"
+                        ],
+                        "feature_134": [
+                            "scale_normal"
+                        ],
+                        "feature_135": [
+                            "scale_normal"
+                        ],
+                        "feature_136": [
+                            "scale_normal"
+                        ],
+                        "feature_137": [
+                            "scale_normal"
+                        ],
+                        "feature_138": [
+                            "scale_normal"
+                        ],
+                        "feature_139": [
+                            "scale_normal"
+                        ],
+                        "feature_140": [
+                            "remove_column"
+                        ],
+                        "feature_141": [
+                            "remove_column"
+                        ],
+                        "feature_142": [
+                            "scale_normal"
+                        ],
+                        "feature_143": [
+                            "scale_normal"
+                        ],
+                        "feature_144": [
+                            "scale_normal"
+                        ],
+                        "feature_145": [
+                            "remove_column"
+                        ],
+                        "feature_146": [
+                            "remove_column"
+                        ],
+                        "feature_147": [
+                            "scale_normal"
+                        ],
+                        "feature_148": [
+                            "scale_normal"
+                        ],
+                        "feature_149": [
+                            "scale_normal"
+                        ],
+                        "feature_150": [
+                            "scale_normal"
+                        ],
+                        "feature_151": [
+                            "remove_column"
+                        ],
+                        "feature_152": [
+                            "scale_normal"
+                        ],
+                        "feature_153": [
+                            "remove_column"
+                        ],
+                        "feature_154": [
+                            "scale_normal"
+                        ],
+                        "feature_155": [
+                            "scale_normal"
+                        ],
+                        "feature_156": [
+                            "scale_normal"
+                        ],
+                        "feature_157": [
+                            "remove_column"
+                        ],
+                        "feature_158": [
+                            "scale_normal"
+                        ],
+                        "feature_159": [
+                            "scale_normal"
+                        ],
+                        "feature_160": [
+                            "scale_normal"
+                        ],
+                        "feature_161": [
+                            "scale_normal"
+                        ],
+                        "feature_162": [
+                            "scale_normal"
+                        ],
+                        "feature_163": [
+                            "scale_normal"
+                        ],
+                        "feature_164": [
+                            "scale_normal"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.75,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "AutoML_Results\\X.data",
+                    "y_path": "AutoML_Results\\y.data",
+                    "results_path": "AutoML_Results"
+                },
+                "learner": {
+                    "model_type": "Linear",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "seed": 1235,
+                    "num_class": 4,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "3_Linear",
+                "status": "trained",
+                "final_loss": 1.7813072263824499,
+                "train_time": 3.533928155899048,
+                "data_type": "original",
+                "max_time_for_learner": 360.0
+            }
+        ],
+        "default_algorithms": [
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "feature_6": [
+                            "remove_column"
+                        ],
+                        "feature_9": [
+                            "remove_column"
+                        ],
+                        "feature_18": [
+                            "remove_column"
+                        ],
+                        "feature_20": [
+                            "remove_column"
+                        ],
+                        "feature_21": [
+                            "remove_column"
+                        ],
+                        "feature_26": [
+                            "remove_column"
+                        ],
+                        "feature_35": [
+                            "remove_column"
+                        ],
+                        "feature_37": [
+                            "remove_column"
+                        ],
+                        "feature_45": [
+                            "remove_column"
+                        ],
+                        "feature_47": [
+                            "remove_column"
+                        ],
+                        "feature_48": [
+                            "remove_column"
+                        ],
+                        "feature_49": [
+                            "remove_column"
+                        ],
+                        "feature_51": [
+                            "remove_column"
+                        ],
+                        "feature_54": [
+                            "remove_column"
+                        ],
+                        "feature_55": [
+                            "remove_column"
+                        ],
+                        "feature_57": [
+                            "remove_column"
+                        ],
+                        "feature_62": [
+                            "remove_column"
+                        ],
+                        "feature_64": [
+                            "remove_column"
+                        ],
+                        "feature_65": [
+                            "remove_column"
+                        ],
+                        "feature_72": [
+                            "remove_column"
+                        ],
+                        "feature_73": [
+                            "remove_column"
+                        ],
+                        "feature_85": [
+                            "remove_column"
+                        ],
+                        "feature_86": [
+                            "remove_column"
+                        ],
+                        "feature_89": [
+                            "remove_column"
+                        ],
+                        "feature_90": [
+                            "remove_column"
+                        ],
+                        "feature_93": [
+                            "remove_column"
+                        ],
+                        "feature_94": [
+                            "remove_column"
+                        ],
+                        "feature_105": [
+                            "remove_column"
+                        ],
+                        "feature_107": [
+                            "remove_column"
+                        ],
+                        "feature_113": [
+                            "remove_column"
+                        ],
+                        "feature_116": [
+                            "remove_column"
+                        ],
+                        "feature_120": [
+                            "remove_column"
+                        ],
+                        "feature_121": [
+                            "remove_column"
+                        ],
+                        "feature_122": [
+                            "remove_column"
+                        ],
+                        "feature_123": [
+                            "remove_column"
+                        ],
+                        "feature_124": [
+                            "remove_column"
+                        ],
+                        "feature_127": [
+                            "remove_column"
+                        ],
+                        "feature_129": [
+                            "remove_column"
+                        ],
+                        "feature_140": [
+                            "remove_column"
+                        ],
+                        "feature_141": [
+                            "remove_column"
+                        ],
+                        "feature_145": [
+                            "remove_column"
+                        ],
+                        "feature_146": [
+                            "remove_column"
+                        ],
+                        "feature_151": [
+                            "remove_column"
+                        ],
+                        "feature_153": [
+                            "remove_column"
+                        ],
+                        "feature_157": [
+                            "remove_column"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.75,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "AutoML_Results\\X.data",
+                    "y_path": "AutoML_Results\\y.data",
+                    "results_path": "AutoML_Results"
+                },
+                "learner": {
+                    "model_type": "Xgboost",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "objective": "multi:softprob",
+                    "eta": 0.075,
+                    "max_depth": 6,
+                    "min_child_weight": 1,
+                    "subsample": 1.0,
+                    "colsample_bytree": 1.0,
+                    "seed": 4,
+                    "eval_metric": "mlogloss",
+                    "num_class": 4,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "4_Default_Xgboost",
+                "status": "trained",
+                "final_loss": 1.3518623739292466,
+                "train_time": 5.3711535930633545,
+                "data_type": "original",
+                "max_time_for_learner": 360.0
+            },
+            {
+                "additional": {
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "feature_1": [
+                            "scale_normal"
+                        ],
+                        "feature_2": [
+                            "scale_normal"
+                        ],
+                        "feature_3": [
+                            "scale_normal"
+                        ],
+                        "feature_4": [
+                            "scale_normal"
+                        ],
+                        "feature_5": [
+                            "scale_normal"
+                        ],
+                        "feature_6": [
+                            "remove_column"
+                        ],
+                        "feature_7": [
+                            "scale_normal"
+                        ],
+                        "feature_8": [
+                            "scale_normal"
+                        ],
+                        "feature_9": [
+                            "remove_column"
+                        ],
+                        "feature_10": [
+                            "scale_normal"
+                        ],
+                        "feature_11": [
+                            "scale_normal"
+                        ],
+                        "feature_12": [
+                            "scale_normal"
+                        ],
+                        "feature_13": [
+                            "scale_normal"
+                        ],
+                        "feature_14": [
+                            "scale_normal"
+                        ],
+                        "feature_15": [
+                            "scale_normal"
+                        ],
+                        "feature_16": [
+                            "scale_normal"
+                        ],
+                        "feature_17": [
+                            "scale_normal"
+                        ],
+                        "feature_18": [
+                            "remove_column"
+                        ],
+                        "feature_19": [
+                            "scale_normal"
+                        ],
+                        "feature_20": [
+                            "remove_column"
+                        ],
+                        "feature_21": [
+                            "remove_column"
+                        ],
+                        "feature_22": [
+                            "scale_normal"
+                        ],
+                        "feature_23": [
+                            "scale_normal"
+                        ],
+                        "feature_24": [
+                            "scale_normal"
+                        ],
+                        "feature_25": [
+                            "scale_normal"
+                        ],
+                        "feature_26": [
+                            "remove_column"
+                        ],
+                        "feature_27": [
+                            "scale_normal"
+                        ],
+                        "feature_28": [
+                            "scale_normal"
+                        ],
+                        "feature_30": [
+                            "scale_normal"
+                        ],
+                        "feature_31": [
+                            "scale_normal"
+                        ],
+                        "feature_33": [
+                            "scale_normal"
+                        ],
+                        "feature_34": [
+                            "scale_normal"
+                        ],
+                        "feature_35": [
+                            "remove_column"
+                        ],
+                        "feature_36": [
+                            "scale_normal"
+                        ],
+                        "feature_37": [
+                            "remove_column"
+                        ],
+                        "feature_38": [
+                            "scale_normal"
+                        ],
+                        "feature_39": [
+                            "scale_normal"
+                        ],
+                        "feature_40": [
+                            "scale_normal"
+                        ],
+                        "feature_41": [
+                            "scale_normal"
+                        ],
+                        "feature_42": [
+                            "scale_normal"
+                        ],
+                        "feature_43": [
+                            "scale_normal"
+                        ],
+                        "feature_44": [
+                            "scale_normal"
+                        ],
+                        "feature_45": [
+                            "remove_column"
+                        ],
+                        "feature_46": [
+                            "scale_normal"
+                        ],
+                        "feature_47": [
+                            "remove_column"
+                        ],
+                        "feature_48": [
+                            "remove_column"
+                        ],
+                        "feature_49": [
+                            "remove_column"
+                        ],
+                        "feature_50": [
+                            "scale_normal"
+                        ],
+                        "feature_51": [
+                            "remove_column"
+                        ],
+                        "feature_52": [
+                            "scale_normal"
+                        ],
+                        "feature_53": [
+                            "scale_normal"
+                        ],
+                        "feature_54": [
+                            "remove_column"
+                        ],
+                        "feature_55": [
+                            "remove_column"
+                        ],
+                        "feature_56": [
+                            "scale_normal"
+                        ],
+                        "feature_57": [
+                            "remove_column"
+                        ],
+                        "feature_58": [
+                            "scale_normal"
+                        ],
+                        "feature_59": [
+                            "scale_normal"
+                        ],
+                        "feature_60": [
+                            "scale_normal"
+                        ],
+                        "feature_61": [
+                            "scale_normal"
+                        ],
+                        "feature_62": [
+                            "remove_column"
+                        ],
+                        "feature_64": [
+                            "remove_column"
+                        ],
+                        "feature_65": [
+                            "remove_column"
+                        ],
+                        "feature_66": [
+                            "scale_normal"
+                        ],
+                        "feature_67": [
+                            "scale_normal"
+                        ],
+                        "feature_68": [
+                            "scale_normal"
+                        ],
+                        "feature_69": [
+                            "scale_normal"
+                        ],
+                        "feature_70": [
+                            "scale_normal"
+                        ],
+                        "feature_71": [
+                            "scale_normal"
+                        ],
+                        "feature_72": [
+                            "remove_column"
+                        ],
+                        "feature_73": [
+                            "remove_column"
+                        ],
+                        "feature_74": [
+                            "scale_normal"
+                        ],
+                        "feature_75": [
+                            "scale_normal"
+                        ],
+                        "feature_76": [
+                            "scale_normal"
+                        ],
+                        "feature_77": [
+                            "scale_normal"
+                        ],
+                        "feature_78": [
+                            "scale_normal"
+                        ],
+                        "feature_79": [
+                            "scale_normal"
+                        ],
+                        "feature_80": [
+                            "scale_normal"
+                        ],
+                        "feature_81": [
+                            "scale_normal"
+                        ],
+                        "feature_82": [
+                            "scale_normal"
+                        ],
+                        "feature_83": [
+                            "scale_normal"
+                        ],
+                        "feature_84": [
+                            "scale_normal"
+                        ],
+                        "feature_85": [
+                            "remove_column"
+                        ],
+                        "feature_86": [
+                            "remove_column"
+                        ],
+                        "feature_87": [
+                            "scale_normal"
+                        ],
+                        "feature_88": [
+                            "scale_normal"
+                        ],
+                        "feature_89": [
+                            "remove_column"
+                        ],
+                        "feature_90": [
+                            "remove_column"
+                        ],
+                        "feature_91": [
+                            "scale_normal"
+                        ],
+                        "feature_92": [
+                            "scale_normal"
+                        ],
+                        "feature_93": [
+                            "remove_column"
+                        ],
+                        "feature_94": [
+                            "remove_column"
+                        ],
+                        "feature_95": [
+                            "scale_normal"
+                        ],
+                        "feature_96": [
+                            "scale_normal"
+                        ],
+                        "feature_98": [
+                            "scale_normal"
+                        ],
+                        "feature_99": [
+                            "scale_normal"
+                        ],
+                        "feature_100": [
+                            "scale_normal"
+                        ],
+                        "feature_101": [
+                            "scale_normal"
+                        ],
+                        "feature_102": [
+                            "scale_normal"
+                        ],
+                        "feature_103": [
+                            "scale_normal"
+                        ],
+                        "feature_104": [
+                            "scale_normal"
+                        ],
+                        "feature_105": [
+                            "remove_column"
+                        ],
+                        "feature_106": [
+                            "scale_normal"
+                        ],
+                        "feature_107": [
+                            "remove_column"
+                        ],
+                        "feature_108": [
+                            "scale_normal"
+                        ],
+                        "feature_109": [
+                            "scale_normal"
+                        ],
+                        "feature_110": [
+                            "scale_normal"
+                        ],
+                        "feature_111": [
+                            "scale_normal"
+                        ],
+                        "feature_112": [
+                            "scale_normal"
+                        ],
+                        "feature_113": [
+                            "remove_column"
+                        ],
+                        "feature_114": [
+                            "scale_normal"
+                        ],
+                        "feature_115": [
+                            "scale_normal"
+                        ],
+                        "feature_116": [
+                            "remove_column"
+                        ],
+                        "feature_117": [
+                            "scale_normal"
+                        ],
+                        "feature_118": [
+                            "scale_normal"
+                        ],
+                        "feature_119": [
+                            "scale_normal"
+                        ],
+                        "feature_120": [
+                            "remove_column"
+                        ],
+                        "feature_121": [
+                            "remove_column"
+                        ],
+                        "feature_122": [
+                            "remove_column"
+                        ],
+                        "feature_123": [
+                            "remove_column"
+                        ],
+                        "feature_124": [
+                            "remove_column"
+                        ],
+                        "feature_125": [
+                            "scale_normal"
+                        ],
+                        "feature_126": [
+                            "scale_normal"
+                        ],
+                        "feature_127": [
+                            "remove_column"
+                        ],
+                        "feature_128": [
+                            "scale_normal"
+                        ],
+                        "feature_129": [
+                            "remove_column"
+                        ],
+                        "feature_130": [
+                            "scale_normal"
+                        ],
+                        "feature_131": [
+                            "scale_normal"
+                        ],
+                        "feature_132": [
+                            "scale_normal"
+                        ],
+                        "feature_133": [
+                            "scale_normal"
+                        ],
+                        "feature_134": [
+                            "scale_normal"
+                        ],
+                        "feature_135": [
+                            "scale_normal"
+                        ],
+                        "feature_136": [
+                            "scale_normal"
+                        ],
+                        "feature_137": [
+                            "scale_normal"
+                        ],
+                        "feature_138": [
+                            "scale_normal"
+                        ],
+                        "feature_139": [
+                            "scale_normal"
+                        ],
+                        "feature_140": [
+                            "remove_column"
+                        ],
+                        "feature_141": [
+                            "remove_column"
+                        ],
+                        "feature_142": [
+                            "scale_normal"
+                        ],
+                        "feature_143": [
+                            "scale_normal"
+                        ],
+                        "feature_144": [
+                            "scale_normal"
+                        ],
+                        "feature_145": [
+                            "remove_column"
+                        ],
+                        "feature_146": [
+                            "remove_column"
+                        ],
+                        "feature_147": [
+                            "scale_normal"
+                        ],
+                        "feature_148": [
+                            "scale_normal"
+                        ],
+                        "feature_149": [
+                            "scale_normal"
+                        ],
+                        "feature_150": [
+                            "scale_normal"
+                        ],
+                        "feature_151": [
+                            "remove_column"
+                        ],
+                        "feature_152": [
+                            "scale_normal"
+                        ],
+                        "feature_153": [
+                            "remove_column"
+                        ],
+                        "feature_154": [
+                            "scale_normal"
+                        ],
+                        "feature_155": [
+                            "scale_normal"
+                        ],
+                        "feature_156": [
+                            "scale_normal"
+                        ],
+                        "feature_157": [
+                            "remove_column"
+                        ],
+                        "feature_158": [
+                            "scale_normal"
+                        ],
+                        "feature_159": [
+                            "scale_normal"
+                        ],
+                        "feature_160": [
+                            "scale_normal"
+                        ],
+                        "feature_161": [
+                            "scale_normal"
+                        ],
+                        "feature_162": [
+                            "scale_normal"
+                        ],
+                        "feature_163": [
+                            "scale_normal"
+                        ],
+                        "feature_164": [
+                            "scale_normal"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.75,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "AutoML_Results\\X.data",
+                    "y_path": "AutoML_Results\\y.data",
+                    "results_path": "AutoML_Results"
+                },
+                "learner": {
+                    "model_type": "Neural Network",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "dense_1_size": 32,
+                    "dense_2_size": 16,
+                    "learning_rate": 0.05,
+                    "seed": 5,
+                    "num_class": 4,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "5_Default_NeuralNetwork",
+                "status": "trained",
+                "final_loss": 1.5168962593995825,
+                "train_time": 3.109286069869995,
+                "data_type": "original",
+                "max_time_for_learner": 360.0
+            },
+            {
+                "additional": {
+                    "trees_in_step": 100,
+                    "train_cant_improve_limit": 1,
+                    "min_steps": 1,
+                    "max_steps": 50,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "feature_6": [
+                            "remove_column"
+                        ],
+                        "feature_9": [
+                            "remove_column"
+                        ],
+                        "feature_18": [
+                            "remove_column"
+                        ],
+                        "feature_20": [
+                            "remove_column"
+                        ],
+                        "feature_21": [
+                            "remove_column"
+                        ],
+                        "feature_26": [
+                            "remove_column"
+                        ],
+                        "feature_35": [
+                            "remove_column"
+                        ],
+                        "feature_37": [
+                            "remove_column"
+                        ],
+                        "feature_45": [
+                            "remove_column"
+                        ],
+                        "feature_47": [
+                            "remove_column"
+                        ],
+                        "feature_48": [
+                            "remove_column"
+                        ],
+                        "feature_49": [
+                            "remove_column"
+                        ],
+                        "feature_51": [
+                            "remove_column"
+                        ],
+                        "feature_54": [
+                            "remove_column"
+                        ],
+                        "feature_55": [
+                            "remove_column"
+                        ],
+                        "feature_57": [
+                            "remove_column"
+                        ],
+                        "feature_62": [
+                            "remove_column"
+                        ],
+                        "feature_64": [
+                            "remove_column"
+                        ],
+                        "feature_65": [
+                            "remove_column"
+                        ],
+                        "feature_72": [
+                            "remove_column"
+                        ],
+                        "feature_73": [
+                            "remove_column"
+                        ],
+                        "feature_85": [
+                            "remove_column"
+                        ],
+                        "feature_86": [
+                            "remove_column"
+                        ],
+                        "feature_89": [
+                            "remove_column"
+                        ],
+                        "feature_90": [
+                            "remove_column"
+                        ],
+                        "feature_93": [
+                            "remove_column"
+                        ],
+                        "feature_94": [
+                            "remove_column"
+                        ],
+                        "feature_105": [
+                            "remove_column"
+                        ],
+                        "feature_107": [
+                            "remove_column"
+                        ],
+                        "feature_113": [
+                            "remove_column"
+                        ],
+                        "feature_116": [
+                            "remove_column"
+                        ],
+                        "feature_120": [
+                            "remove_column"
+                        ],
+                        "feature_121": [
+                            "remove_column"
+                        ],
+                        "feature_122": [
+                            "remove_column"
+                        ],
+                        "feature_123": [
+                            "remove_column"
+                        ],
+                        "feature_124": [
+                            "remove_column"
+                        ],
+                        "feature_127": [
+                            "remove_column"
+                        ],
+                        "feature_129": [
+                            "remove_column"
+                        ],
+                        "feature_140": [
+                            "remove_column"
+                        ],
+                        "feature_141": [
+                            "remove_column"
+                        ],
+                        "feature_145": [
+                            "remove_column"
+                        ],
+                        "feature_146": [
+                            "remove_column"
+                        ],
+                        "feature_151": [
+                            "remove_column"
+                        ],
+                        "feature_153": [
+                            "remove_column"
+                        ],
+                        "feature_157": [
+                            "remove_column"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.75,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "AutoML_Results\\X.data",
+                    "y_path": "AutoML_Results\\y.data",
+                    "results_path": "AutoML_Results"
+                },
+                "learner": {
+                    "model_type": "Random Forest",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "criterion": "gini",
+                    "max_features": 0.9,
+                    "min_samples_split": 30,
+                    "max_depth": 4,
+                    "seed": 6,
+                    "eval_metric_name": "logloss",
+                    "num_class": 4,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "6_Default_RandomForest",
+                "status": "trained",
+                "final_loss": 1.3259278420861413,
+                "train_time": 6.07188868522644,
+                "data_type": "original",
+                "max_time_for_learner": 360.0
+            }
+        ],
+        "ensemble": [
+            {
+                "model_type": "ensemble",
+                "is_stacked": false,
+                "name": "Ensemble",
+                "status": "trained",
+                "final_loss": 1.3133918102330235,
+                "train_time": 0.4630875587463379
+            }
+        ]
+    },
+    "adjust_validation": false
+}

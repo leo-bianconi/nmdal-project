@@ -1,0 +1,14 @@
+if (feature_104 <= 0.5) and (feature_84 <= 0.5) and (feature_80 <= 0.5) then class: 1 (proba: 38.94%) | based on 678 samples
+
+if (feature_104 > 0.5) and (feature_158 <= 0.5) and (feature_108 <= 0.5) then class: 0 (proba: 40.24%) | based on 169 samples
+
+if (feature_104 <= 0.5) and (feature_84 > 0.5) and (feature_112 <= 0.5) then class: 0 (proba: 30.34%) | based on 89 samples
+
+if (feature_104 <= 0.5) and (feature_84 <= 0.5) and (feature_80 > 0.5) then class: 1 (proba: 63.41%) | based on 41 samples
+
+if (feature_104 > 0.5) and (feature_158 <= 0.5) and (feature_108 > 0.5) then class: 0 (proba: 66.67%) | based on 18 samples
+
+if (feature_104 <= 0.5) and (feature_84 > 0.5) and (feature_112 > 0.5) then class: 2 (proba: 75.0%) | based on 4 samples
+
+if (feature_104 > 0.5) and (feature_158 > 0.5) then class: 1 (proba: 100.0%) | based on 2 samples
+

@@ -1,0 +1,424 @@
+{
+    "uid": "9954bf7c-5ed4-467d-b67d-5e3280ee6e44",
+    "name": "4_Default_Xgboost",
+    "preprocessing": [
+        {
+            "remove_columns": [
+                "feature_6",
+                "feature_9",
+                "feature_18",
+                "feature_20",
+                "feature_21",
+                "feature_26",
+                "feature_35",
+                "feature_37",
+                "feature_45",
+                "feature_47",
+                "feature_48",
+                "feature_49",
+                "feature_51",
+                "feature_54",
+                "feature_55",
+                "feature_57",
+                "feature_62",
+                "feature_64",
+                "feature_65",
+                "feature_72",
+                "feature_73",
+                "feature_85",
+                "feature_86",
+                "feature_89",
+                "feature_90",
+                "feature_93",
+                "feature_94",
+                "feature_105",
+                "feature_107",
+                "feature_113",
+                "feature_116",
+                "feature_120",
+                "feature_121",
+                "feature_122",
+                "feature_123",
+                "feature_124",
+                "feature_127",
+                "feature_129",
+                "feature_140",
+                "feature_141",
+                "feature_145",
+                "feature_146",
+                "feature_151",
+                "feature_153",
+                "feature_157"
+            ],
+            "categorical_y": {
+                "0": 0,
+                "1": 1,
+                "2": 2,
+                "3": 3
+            },
+            "ml_task": "multiclass_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "feature_6": [
+                        "remove_column"
+                    ],
+                    "feature_9": [
+                        "remove_column"
+                    ],
+                    "feature_18": [
+                        "remove_column"
+                    ],
+                    "feature_20": [
+                        "remove_column"
+                    ],
+                    "feature_21": [
+                        "remove_column"
+                    ],
+                    "feature_26": [
+                        "remove_column"
+                    ],
+                    "feature_35": [
+                        "remove_column"
+                    ],
+                    "feature_37": [
+                        "remove_column"
+                    ],
+                    "feature_45": [
+                        "remove_column"
+                    ],
+                    "feature_47": [
+                        "remove_column"
+                    ],
+                    "feature_48": [
+                        "remove_column"
+                    ],
+                    "feature_49": [
+                        "remove_column"
+                    ],
+                    "feature_51": [
+                        "remove_column"
+                    ],
+                    "feature_54": [
+                        "remove_column"
+                    ],
+                    "feature_55": [
+                        "remove_column"
+                    ],
+                    "feature_57": [
+                        "remove_column"
+                    ],
+                    "feature_62": [
+                        "remove_column"
+                    ],
+                    "feature_64": [
+                        "remove_column"
+                    ],
+                    "feature_65": [
+                        "remove_column"
+                    ],
+                    "feature_72": [
+                        "remove_column"
+                    ],
+                    "feature_73": [
+                        "remove_column"
+                    ],
+                    "feature_85": [
+                        "remove_column"
+                    ],
+                    "feature_86": [
+                        "remove_column"
+                    ],
+                    "feature_89": [
+                        "remove_column"
+                    ],
+                    "feature_90": [
+                        "remove_column"
+                    ],
+                    "feature_93": [
+                        "remove_column"
+                    ],
+                    "feature_94": [
+                        "remove_column"
+                    ],
+                    "feature_105": [
+                        "remove_column"
+                    ],
+                    "feature_107": [
+                        "remove_column"
+                    ],
+                    "feature_113": [
+                        "remove_column"
+                    ],
+                    "feature_116": [
+                        "remove_column"
+                    ],
+                    "feature_120": [
+                        "remove_column"
+                    ],
+                    "feature_121": [
+                        "remove_column"
+                    ],
+                    "feature_122": [
+                        "remove_column"
+                    ],
+                    "feature_123": [
+                        "remove_column"
+                    ],
+                    "feature_124": [
+                        "remove_column"
+                    ],
+                    "feature_127": [
+                        "remove_column"
+                    ],
+                    "feature_129": [
+                        "remove_column"
+                    ],
+                    "feature_140": [
+                        "remove_column"
+                    ],
+                    "feature_141": [
+                        "remove_column"
+                    ],
+                    "feature_145": [
+                        "remove_column"
+                    ],
+                    "feature_146": [
+                        "remove_column"
+                    ],
+                    "feature_151": [
+                        "remove_column"
+                    ],
+                    "feature_153": [
+                        "remove_column"
+                    ],
+                    "feature_157": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "categorical_to_int"
+                ],
+                "ml_task": "multiclass_classification"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "2.0.3",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "618eab62-200d-4e25-af39-3d6320e80a5f",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "multiclass_classification",
+                "n_jobs": -1,
+                "objective": "multi:softprob",
+                "eta": 0.075,
+                "max_depth": 6,
+                "min_child_weight": 1,
+                "subsample": 1.0,
+                "colsample_bytree": 1.0,
+                "seed": 4,
+                "eval_metric": "mlogloss",
+                "num_class": 4,
+                "explain_level": 2
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rounds": 10000,
+            "early_stopping_rounds": 50,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "feature_6": [
+                    "remove_column"
+                ],
+                "feature_9": [
+                    "remove_column"
+                ],
+                "feature_18": [
+                    "remove_column"
+                ],
+                "feature_20": [
+                    "remove_column"
+                ],
+                "feature_21": [
+                    "remove_column"
+                ],
+                "feature_26": [
+                    "remove_column"
+                ],
+                "feature_35": [
+                    "remove_column"
+                ],
+                "feature_37": [
+                    "remove_column"
+                ],
+                "feature_45": [
+                    "remove_column"
+                ],
+                "feature_47": [
+                    "remove_column"
+                ],
+                "feature_48": [
+                    "remove_column"
+                ],
+                "feature_49": [
+                    "remove_column"
+                ],
+                "feature_51": [
+                    "remove_column"
+                ],
+                "feature_54": [
+                    "remove_column"
+                ],
+                "feature_55": [
+                    "remove_column"
+                ],
+                "feature_57": [
+                    "remove_column"
+                ],
+                "feature_62": [
+                    "remove_column"
+                ],
+                "feature_64": [
+                    "remove_column"
+                ],
+                "feature_65": [
+                    "remove_column"
+                ],
+                "feature_72": [
+                    "remove_column"
+                ],
+                "feature_73": [
+                    "remove_column"
+                ],
+                "feature_85": [
+                    "remove_column"
+                ],
+                "feature_86": [
+                    "remove_column"
+                ],
+                "feature_89": [
+                    "remove_column"
+                ],
+                "feature_90": [
+                    "remove_column"
+                ],
+                "feature_93": [
+                    "remove_column"
+                ],
+                "feature_94": [
+                    "remove_column"
+                ],
+                "feature_105": [
+                    "remove_column"
+                ],
+                "feature_107": [
+                    "remove_column"
+                ],
+                "feature_113": [
+                    "remove_column"
+                ],
+                "feature_116": [
+                    "remove_column"
+                ],
+                "feature_120": [
+                    "remove_column"
+                ],
+                "feature_121": [
+                    "remove_column"
+                ],
+                "feature_122": [
+                    "remove_column"
+                ],
+                "feature_123": [
+                    "remove_column"
+                ],
+                "feature_124": [
+                    "remove_column"
+                ],
+                "feature_127": [
+                    "remove_column"
+                ],
+                "feature_129": [
+                    "remove_column"
+                ],
+                "feature_140": [
+                    "remove_column"
+                ],
+                "feature_141": [
+                    "remove_column"
+                ],
+                "feature_145": [
+                    "remove_column"
+                ],
+                "feature_146": [
+                    "remove_column"
+                ],
+                "feature_151": [
+                    "remove_column"
+                ],
+                "feature_153": [
+                    "remove_column"
+                ],
+                "feature_157": [
+                    "remove_column"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "categorical_to_int"
+            ],
+            "ml_task": "multiclass_classification"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "stratify": true,
+            "X_path": "AutoML_Results_smote\\X.data",
+            "y_path": "AutoML_Results_smote\\y.data",
+            "results_path": "AutoML_Results_smote"
+        },
+        "learner": {
+            "model_type": "Xgboost",
+            "ml_task": "multiclass_classification",
+            "n_jobs": -1,
+            "objective": "multi:softprob",
+            "eta": 0.075,
+            "max_depth": 6,
+            "min_child_weight": 1,
+            "subsample": 1.0,
+            "colsample_bytree": 1.0,
+            "seed": 4,
+            "eval_metric": "mlogloss",
+            "num_class": 4,
+            "explain_level": 2
+        },
+        "automl_random_state": 1234,
+        "ml_task": "multiclass_classification",
+        "explain_level": 2,
+        "name": "4_Default_Xgboost",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 360.0
+    },
+    "saved": [
+        "4_Default_Xgboost\\learner_fold_0.xgboost.json"
+    ],
+    "predictions_fname": "4_Default_Xgboost\\predictions_validation.csv",
+    "metric_name": "logloss",
+    "final_loss": "1.338632877968378",
+    "train_time": 17.678783655166626,
+    "is_stacked": false,
+    "joblib_version": "1.4.2"
+}

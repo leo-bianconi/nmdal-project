@@ -1,0 +1,14 @@
+if (feature_84 <= 18.5) and (feature_29 <= 0.5) and (feature_71 <= 8.0) then class: 1 (proba: 37.87%) | based on 919 samples
+
+if (feature_84 > 18.5) and (feature_112 <= 450.0) and (feature_40 <= 272.5) then class: 0 (proba: 35.82%) | based on 67 samples
+
+if (feature_84 <= 18.5) and (feature_29 <= 0.5) and (feature_71 > 8.0) then class: 1 (proba: 100.0%) | based on 5 samples
+
+if (feature_84 > 18.5) and (feature_112 > 450.0) and (feature_142 <= 30.5) then class: 2 (proba: 100.0%) | based on 3 samples
+
+if (feature_84 > 18.5) and (feature_112 <= 450.0) and (feature_40 > 272.5) then class: 3 (proba: 100.0%) | based on 3 samples
+
+if (feature_84 <= 18.5) and (feature_29 > 0.5) then class: 3 (proba: 100.0%) | based on 3 samples
+
+if (feature_84 > 18.5) and (feature_112 > 450.0) and (feature_142 > 30.5) then class: 1 (proba: 100.0%) | based on 1 samples
+
